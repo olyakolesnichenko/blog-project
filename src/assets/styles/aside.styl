@@ -1,14 +1,29 @@
-.aside-top
-  grid-column 2
-  grid-row 1
-  background-color aliceblue
-  @media (max-width 767px)
-    grid-column 1
+.aside
+  background-color lighten(yellow_color, 65%)
+  padding 10px 3px
+  &-top
+    grid-column 2
     grid-row 1
-.aside-bottom
-  grid-column 2
-  grid-row 2
-  background-color aliceblue
-  @media (max-width 767px)
-    grid-column 1
-    grid-row 3
+    text-align center
+    @media (max-width 767px)
+      grid-column 1
+      grid-row 1
+  &-bottom
+    grid-column 2
+    grid-row 2
+    @media (max-width 767px)
+      grid-column 1
+      grid-row 3
+  .photo
+    text-align center
+    img
+      width 90%
+      max-width 300px
+  .name
+    font-size 18px
+    font-weight 700
+  .about
+    margin-top 10px
+    font-style italic
+
+
