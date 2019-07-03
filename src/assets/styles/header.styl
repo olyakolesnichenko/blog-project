@@ -1,4 +1,53 @@
 header
-  height 100px
+  padding 5px 0
   color #fff
   background-color dark_blue_color
+  .row
+    justify-content space-between
+  .logo
+    display block
+    background url("../assets/images/harry-potter-logo.png") no-repeat
+    background-size contain
+    width 120px
+    height auto
+    min-height 100px
+    @media (max-width 767px)
+      width 100%
+      background-position 50%
+  .right-block
+    display flex
+    flex-direction column
+    justify-content space-around
+    @media (max-width 767px)
+      flex-direction row-reverse
+    >div
+      align-self flex-end
+      @media (max-width 767px)
+        align-self center
+
+.social
+  .fa-stack
+    color light_blue_color
+    &:hover
+      color darken(light_blue_color, 20%)
+    @media (max-width 767px)
+      display none
+    &.search
+      margin-right 30px
+      @media (max-width 767px)
+        display inherit
+        margin-right 0
+
+.main-menu
+  display flex
+  li
+    a
+      padding 5px 20px
+      color #fff
+      text-decoration none
+      &:hover
+        color darken(#fff, 10%)
+        text-decoration underline
+      &:last-child
+        padding-right 0
+
