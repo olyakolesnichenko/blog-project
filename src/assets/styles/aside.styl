@@ -25,5 +25,75 @@
   .about
     margin-top 10px
     font-style italic
+  .social
+    text-align center
+  .subscribe-wrapper
+    padding 10px 0
+    margin 10px 0
+    border-top 1px solid blue_color
+    border-bottom 1px solid blue_color
+    text-align center
+    >input
+      width 90%
+      padding 5px 10px
+      margin-bottom 5px
+      &[type="submit"]
+        padding 7px 10px
+        background-color blue_color
+        color #fff
+        border-radius 5px
+  .search-wrapper
+    display flex
+    >input
+      width 90%
+      padding 5px 10px
+    >button
+      flex-shrink 0
+      background-color light_blue_color
+      color #fff
+  .tags
+    padding 10px 0
+    text-align center
+    >a
+      display inline-block
+      text-decoration none
+      color blue_color
+      line-height 1.2
+      &:hover
+        text-decoration underline
+        color darken(blue_color, 30%)
+
+.comments
+  .heading
+    font-weight 700
+    text-align center
+  .comment-item
+    display flex
+    padding 2px
+    margin 5px 0
+    border 2px solid light_blue_color
+    .comment-info
+      display flex
+      flex-direction column
+      justify-content space-around
+      width 80%
+      padding 0 5px
+      .name
+        display block
+        font-size 14px
+        font-weight 700
+    >img
+      width 20%
+      flex-shrink 0
+
+  .comment
+    display block
+    white-space nowrap
+    overflow hidden
+    text-overflow ellipsis
+
+
+
+
 
 
