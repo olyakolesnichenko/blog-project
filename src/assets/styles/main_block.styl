@@ -12,8 +12,51 @@ main
   .blog-item
     display flex
     flex 1 30%
+    align-items center
+    position relative
     min-width 300px
     padding 10px
     border 1px solid light_blue_color
     border-radius 5px
     background-color lighten(light_blue_color, 90%)
+  .img-wrapper
+    width 30%
+    overflow hidden
+    >img
+      display block
+      width 100%
+      height auto
+      transition: all 0.3s
+    &:hover
+      >img
+        transform scale(1.2)
+  .article-info
+    display flex
+    justify-content space-between
+    flex-direction column
+    width 70%
+    height 100%
+    text-align center
+    padding-left 10px
+    padding-top 10px
+    .title
+      font-weight 700
+      font-size 16px
+      color dark_blue_color
+      text-decoration none
+      &:hover
+        color darken(dark_blue_color, 20%)
+        text-decoration underline
+    .date
+      position absolute
+      color lighten(grey_main_color, 50%)
+      top 5px
+      right 5px
+      font-size 12px
+    .rate-data
+      display: flex
+      justify-content space-between
+      .fas
+        color: yellow_color
+
+
